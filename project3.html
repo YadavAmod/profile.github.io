@@ -1,0 +1,95 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Background Changer</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 20px 100px;
+            }
+            h1{
+        text-align: center;
+        text-decoration: underline;
+ }
+ img{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+ }
+ p{
+    font-size: 22px;
+    text-align: justify;
+ }
+ .btn{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 2px solid grey;
+    border-radius: 50%;
+    cursor: pointer;
+ }
+ #white{
+    background-color: white;
+ }
+ #aqua{
+    background-color: #00FFFF;
+ }
+ #violet{
+    background-color:  #7F00FF;
+ }
+ #black{
+    background-color: black;
+ }
+ #color-switcher{
+    text-align: right;
+ }
+        </style>
+    </head>
+    <body>
+        <div id="color-switcher">
+            <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+            <span class="btn" id="aqua" onclick="changeBG('#00FFFF')"></span>
+            <span class="btn" id="violet" onclick="changeBG('#7F00FF')"></span>
+            <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+        </div>
+        <h1 class="text">About Us</h1>
+        <img src="amod.jpg" alt="">
+        <p class="text">In the vast and dynamic realm of higher education, nestled amidst the halls of knowledge and innovation, an aspiring young mind embarks on an exhilarating journey as a computer science and engineering student in the second year of their B.Tech program. This stage of their academic voyage finds them at the cusp of transformation, where the foundation laid in the earlier years now blossoms into a realm of specialized expertise and practical application.
+
+            With a passion for unraveling the mysteries of technology and a relentless pursuit of excellence, the engineering student embraces the challenges and opportunities that the computer science and engineering domain offers. Armed with a profound understanding of algorithms, data structures, programming languages, and software development, they are well-equipped to tackle real-world problems with an ingenious approach.
+            
+            The academic landscape of the second year, fourth semester, unfurls with a captivating array of advanced subjects. Diving deeper into the core of their discipline, they delve into the intricate world of database management systems, computer networks, operating systems, and software engineering principles. Each subject is a stepping stone to honing their skills and crafting a comprehensive understanding of the inner workings of modern technology.
+            
+            Alongside the structured curriculum, the engineering student actively engages in a myriad of practical projects and extracurricular activities. Collaborating with peers, they form dynamic teams, sparking a culture of innovation and creativity. Hackathons, coding competitions, and tech symposiums become their playground, where they sharpen their problem-solving acumen and augment their ability to think on their feet.
+            
+            Beyond the academic sphere, the second year unveils a broader perspective on life and the world around them. Balancing between the rigors of academics and the pursuit of a well-rounded personality, they partake in cultural events, sports, and social initiatives, nurturing essential interpersonal skills and a sense of empathy.
+            
+            In the relentless quest for knowledge, the engineering student is mentored and guided by a distinguished faculty, revered for their expertise and dedication. The mentor-student relationship goes beyond the classroom, as they foster an environment of open dialogue and support, ensuring the students' intellectual growth and overall development.
+            
+            As they progress through the fourth semester of their B.Tech journey, the student begins to ponder their future path. Internships and industrial training beckon, offering them a glimpse into the practical world of computer science and engineering. The experiences gained from these engagements provide them with invaluable insights, shaping their career aspirations and professional goals.
+            
+            Amidst the numerous challenges and opportunities, the engineering student continues to cultivate an insatiable curiosity, the hallmark of a lifelong learner. They keep abreast of the latest technological advancements and industry trends, attending workshops, seminars, and conferences, as they march towards becoming pioneers in their chosen field.
+            
+            In conclusion, the second year, fourth semester of the computer science and engineering B.Tech program encapsulates a transformative phase for the engineering student. Armed with theoretical knowledge, practical experience, and an undying passion for technology, they are poised to embrace the future with unwavering determination and contribute meaningfully to the ever-evolving landscape of computer science and engineering. With a blend of academic excellence, creativity, and an indomitable spirit, they are the architects of tomorrow's digital world.
+            </p>
+            <script>
+    function changeBG(color){
+        document.body.style.backgroundColor=color;
+        let txt=document.getElementsByClassName("text");
+        if(color=="#000000"){
+            for(let elm of txt){
+                elm.style.color="white";
+            }
+        }
+        else{
+            for(let elm of txt){
+                elm.style.color="black";
+            }
+        }
+    }
+
+</script>
+    </body>
+    </html>
